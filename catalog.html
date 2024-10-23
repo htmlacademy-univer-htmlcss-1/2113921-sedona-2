@@ -6,20 +6,21 @@
   </head>
   <body>
     <header class="header">
+
       <nav class="nav">
         <img class="nav__logo" src="#" alt="Лого">
         <ul class="nav__menu">
-          <li><a class="nav__link" href="#">Главная</a></li>
-          <li><a class="nav__link" href="#">О Седоне</a></li>
-          <li><a class="nav__link" href="#">Гостиницы</a></li>
-        </ul>
-
-        <ul class="nav__action">
-          <li><a href="#"><img class="nav__icon" src="#" alt="Поиск"></a></li>
-          <li><a href="#"><img class="nav__icon" src="#" alt="Избранное"></a></li>
-          <li><a class="nav__button" href="#">Хочу сюда!</a></li>
+          <li class="nav__link"><a href="#">Главная</a></li>
+          <li class="nav__link"><a href="#">О Седоне</a></li>
+          <li class="nav__link"><a href="#">Гостиницы</a></li>
         </ul>
       </nav>
+
+      <ul class="header__actions">
+        <li class="header__action"><a href="#"><img src="#" alt="Поиск"></a></li>
+        <li class="header__action"><a href="#"><img src="#" alt="Избранное"></a></li>
+        <li class="header__action"><a href="#">Хочу сюда!</a></li>
+      </ul>
     </header>
 
     <section class="hotels">
@@ -36,17 +37,97 @@
         <label><input type="radio">Апартаменты</label>
 
         <h3>Стоимость, ₽:</h3>
-        <input>
-        <button></button>
-        <button></button>
+        <label for="min-price">От</label>
+        <input id="min-price" type="number" min="0" value="0">
+        <label for="max-price">До</label>
+        <input id="max-price" type="number" max="9000" value="9000">
+
+        <div>
+          <button>Применить</button>
+          <button>Сбросить</button>
+        </div>
       </aside>
     </section>
 
+    <section>
+      <h2>Найдено гостиниц: 38</h2>
 
+      <div>
+          <label for="sort">Сортировать:</label>
+          <select id="sort">
+              <option value="cheap">Сначала дешевые</option>
+              <option value="expensive">Сначала дорогие</option>
+          </select>
+      </div>
 
+      <ul>
+          <li>
+              <article>
+                  <img src="#" alt="Amara Resort & Spa">
+                  <h3>Amara Resort & Spa</h3>
+                  <p>Гостиница | От 4000 ₽</p>
+                  <div class="buttons">
+                      <a href="#" class="button">Подробнее</a>
+                      <a href="#" class="button">В избранное</a>
+                  </div>
+                  <p>Рейтинг: 8.5</p>
+                  <p>★★★</p>
+              </article>
+          </li>
 
+          <li>
+              <article>
+                  <img src="#" alt="Villas at Poco Diablo">
+                  <h3>Villas at Poco Diablo</h3>
+                  <p>Гостиница | От 5000 ₽</p>
+                  <div class="buttons">
+                      <a href="#" class="button">Подробнее</a>
+                      <a href="#" class="button">В избранное</a>
+                  </div>
+                  <p>Рейтинг: 9.2</p>
+                  <p>★★★</p>
+              </article>
+          </li>
 
+          <li>
+              <article>
+                  <img src="#" alt="Desert Quail Inn">
+                  <h3>Desert Quail Inn</h3>
+                  <p>Гостиница | От 2500 ₽</p>
+                  <div class="buttons">
+                      <a href="#" class="button">Подробнее</a>
+                      <a href="#" class="button">В избранное</a>
+                  </div>
+                  <p>Рейтинг: 6.9</p>
+                  <p>★★★</p>
+              </article>
+          </li>
 
+          <li>
+              <article>
+                  <img src="#" alt="GreenTree Inn">
+                  <h3>GreenTree Inn</h3>
+                  <p>Гостиница | От 1500 ₽</p>
+                  <div class="buttons">
+                      <a href="#" class="button">Подробнее</a>
+                      <a href="#" class="button">В избранное</a>
+                  </div>
+                  <p>Рейтинг: 5.0</p>
+                  <p>★★</p>
+              </article>
+          </li>
+      </ul>
+
+      <nav class="pagination">
+        <ul>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">...10</a></li>
+        </ul>
+    </nav>
+  </section>
 
     <section class="newsletter">
       <h2 class="newsletter__title">Подпишитесь на рассылку</h2>
@@ -58,13 +139,42 @@
     </section>
 
     <footer class="footer">
-      <ul class="footer__socials">
-        <li class="footer__social"><a href="#"><img src="#" alt="Вк"></a></li>
-        <li class="footer__social"><a href="#"><img src="#" alt="Телеграм"></a></li>
-        <li class="footer__social"><a href="#"><img src="#" alt="Ютуб"></a></li>
-      </ul>
-      <p class="footer__phone">+7 (812) 812-12-12</p>
-      <img class="footer_logo" src="#" alt="Логотип">
+
+      <section class="footer__socials">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul class="footer__socials_list">
+          <li class="footer__social_item">
+            <a href="#">
+              <span class="visually-hidden">Вк</span>
+              <img src="#" alt="Логотип Вк">
+            </a>
+          </li>
+          <li class="footer__social_item">
+            <a href="#">
+              <span class="visually-hidden">Телеграм</span>
+              <img src="#" alt="Логотип Телеграм">
+            </a>
+          </li>
+          <li class="footer__social_item">
+            <a href="#">
+              <span class="visually-hidden">Ютуб</span>
+              <img src="#" alt="Логотип Ютуб">
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="footer__contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <address class="footer__contact">
+          <a class="footer__contacts_link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </address>
+      </section>
+
+      <section class="footer__logo">
+        <h2 class="visually-hidden">Логотип</h2>
+        <img class="footer__logo_image" src="#" alt="Логотип">
+      </section>
     </footer>
   </body>
 </html>
