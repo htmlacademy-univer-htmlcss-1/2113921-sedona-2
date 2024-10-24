@@ -36,29 +36,29 @@
 
           <fieldset class="filter__infrastructure">
               <legend class="filter__infrastructure_legend">Инфраструктура:</legend>
-              <label><input type="checkbox" checked>Бассейн</label>
-              <label><input type="checkbox" checked>Парковка</label>
-              <label><input type="checkbox">Wi-Fi</label>
+              <label><input name="pool" type="checkbox" checked>Бассейн</label>
+              <label><input name="parking" type="checkbox" checked>Парковка</label>
+              <label><input name="wifi" type="checkbox">Wi-Fi</label>
           </fieldset>
 
           <fieldset class="filter__house">
               <legend class="filter__house_legend">Тип Жилья:</legend>
-              <label><input type="radio" checked>Гостиница</label>
-              <label><input type="radio">Мотель</label>
-              <label><input type="radio">Апартаменты</label>
+              <label><input name="house_type" type="radio" checked>Гостиница</label>
+              <label><input name="house_type" type="radio">Мотель</label>
+              <label><input name="house_type" type="radio">Апартаменты</label>
           </fieldset>
 
           <fieldset class="filter__price">
               <legend class="filter__price_legend">Стоимость, ₽:</legend>
               <label for="min-price">От</label>
-              <input id="min-price" type="number" min="0" value="0">
+              <input name="min-price" id="min-price" type="number" min="0" value="0">
               <label for="max-price">До</label>
-              <input id="max-price" type="number" max="9000" value="9000">
+              <input name="max-price" id="max-price" type="number" max="9000" value="9000">
           </fieldset>
 
           <div class="filter__buttons">
               <button type="submit" class="filter__button_apply">Применить</button>
-              <button class="filter__button_reset">Сбросить</button>
+              <button type="reset" class="filter__button_reset">Сбросить</button>
           </div>
         </form>
       </section>
