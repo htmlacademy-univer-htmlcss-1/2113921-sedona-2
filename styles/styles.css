@@ -41,7 +41,6 @@ body {
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
-  text-transform: uppercase;
 }
 
 .btn {
@@ -49,6 +48,7 @@ body {
   text-decoration: none;
   color: #FFF;
   border-radius: 4px;
+  text-transform: uppercase;
 }
 
 .hero {
@@ -165,7 +165,6 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 36px;
-  text-transform: uppercase;
 }
 
 .newsletter {
@@ -258,4 +257,83 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
+}
+
+.catalog__title {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.filter__button_apply {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  border-radius: 4px;
+  background-color: #82B3D3;
+}
+
+.filter__button_reset {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  background-color: transparent;
+}
+
+.sort__select {
+  color: #333;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.catalog__hotel_name {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.catalog__hotel_price {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.details__button {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.favorites__button {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  background-color: #82B3D3;
+}
+
+.catalog__hotel_raiting {
+  color: #333;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background-color: #F2F2F2;
+}
+
+.btn__active {
+  background-color: #7DB54F;
 }
