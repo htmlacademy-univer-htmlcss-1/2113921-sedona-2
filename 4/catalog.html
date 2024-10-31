@@ -21,7 +21,7 @@
       <ul class="header__actions">
         <li class="header__action"><a href="#"><img src="./images/icons/search_icon.svg" alt="Поиск" width="20" height="20"></a></li>
         <li class="header__action"><a href="#"><img src="./images/icons/header_like_icon.svg" alt="Избранное" width="20" height="20"></a></li>
-        <li class="header__action header__action_bg"><a class="link_header" href="#">Хочу сюда!</a></li>
+        <li class="header__action"><a class="btn" href="#">Хочу сюда!</a></li>
       </ul>
     </header>
 
@@ -59,17 +59,17 @@
           </fieldset>
 
           <div class="filter__buttons">
-              <button type="submit" class="filter__button_apply">Применить</button>
-              <button type="reset" class="filter__button_reset">Сбросить</button>
+              <button type="submit" class="btn filter__button_apply">Применить</button>
+              <button type="reset" class="btn filter__button_reset">Сбросить</button>
           </div>
         </form>
       </section>
 
       <section class="catalog">
-        <h2>Найдено гостиниц: 38</h2>
+        <h2 class="catalog__title">Найдено гостиниц: 38</h2>
 
         <div class="sort">
-            <label class="sort__label" for="sort">Сортировать:</label>
+            <label class="sort__label visually-hidden" for="sort">Сортировать:</label>
             <select class="sort__select" id="sort">
                 <option value="cheap">Сначала дешевые</option>
                 <option value="expensive">Сначала дорогие</option>
@@ -101,9 +101,9 @@
               <img class="catalog__image" src="./images/catalog/catalog_amara_resort.jpg" width="300" height="212" alt="Картинка отеля Amara Resort & Spa">
               <h3 class="catalog__hotel_name">Amara Resort & Spa</h3>
               <p class="catalog__hotel_price">Гостиница | От 4000 ₽</p>
-              <div class="buttons">
-                  <a href="#" class="button">Подробнее</a>
-                  <button class="card__button" type="button">В избранное</button>
+              <div class="buttons__card">
+                  <a href="#" class="btn details__button">Подробнее</a>
+                  <button class="btn favorites__button" type="button">В избранное</button>
               </div>
               <p class="catalog__hotel_raiting">Рейтинг: 8.5</p>
               <p class="catalog__hotel_stars">★★★</p>
@@ -113,9 +113,9 @@
               <img class="catalog__image" src="./images/catalog/catalog_poco_diablo.jpg" width="300" height="212" alt="Картинка отеля Villas at Poco Diablo">
               <h3 class="catalog__hotel_name">Villas at Poco Diablo</h3>
               <p class="catalog__hotel_price">Гостиница | От 5000 ₽</p>
-              <div class="buttons">
-                  <a href="#" class="button">Подробнее</a>
-                  <button class="card__button" type="button">В избранное</button>
+              <div class="buttons__card">
+                  <a href="#" class="btn details__button">Подробнее</a>
+                  <button class="btn favorites__button btn__active" type="button">В избранном</button>
               </div>
               <p class="catalog__hotel_raiting">Рейтинг: 9.2</p>
               <p class="catalog__hotel_stars">★★★</p>
@@ -125,9 +125,9 @@
               <img class="catalog__image" src="./images/catalog/catalog_desert_quail.jpg" width="300" height="212" alt="Картинка отеля Desert Quail Inn">
               <h3 class="catalog__hotel_name">Desert Quail Inn</h3>
               <p class="catalog__hotel_price">Гостиница | От 2500 ₽</p>
-              <div class="buttons">
-                  <a href="#" class="button">Подробнее</a>
-                  <button class="card__button" type="button">В избранное</button>
+              <div class="buttons__card">
+                  <a href="#" class="btn details__button">Подробнее</a>
+                  <button class="btn favorites__button" type="button">В избранное</button>
               </div>
               <p class="catalog__hotel_raiting">Рейтинг: 6.9</p>
               <p class="catalog__hotel_stars">★★★</p>
@@ -137,9 +137,9 @@
               <img class="catalog__image" src="./images/catalog/catalog_greentree.jpg" width="300" height="212" alt="Картинка отеля GreenTree Inn">
               <h3 class="catalog__hotel_name">GreenTree Inn</h3>
               <p class="catalog__hotel_price">Гостиница | От 1500 ₽</p>
-              <div class="buttons">
-                  <a href="#" class="button">Подробнее</a>
-                  <button class="card__button" type="button">В избранное</button>
+              <div class="buttons__card">
+                  <a href="#" class="btn details__button">Подробнее</a>
+                  <button class="btn favorites__button" type="button">В избранное</button>
               </div>
               <p class="catalog__hotel_raiting">Рейтинг: 5.0</p>
               <p class="catalog__hotel_stars">★★★</p>
@@ -149,22 +149,22 @@
 
         <nav class="pagination">
           <ul class="pagination__items">
-              <li class="pagination__item"><a href="#">1</a></li>
-              <li class="pagination__item"><a href="#">2</a></li>
-              <li class="pagination__item"><a href="#">3</a></li>
-              <li class="pagination__item"><a href="#">4</a></li>
-              <li class="pagination__item"><span>...</span></li>
-              <li class="pagination__item"><a href="#">10</a></li>
+              <li class="pagination__item pagination__item-first"><a class="pagination__link pagination__link-first" href="#">1</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+              <li class="pagination__item"><span class="pagination__points">...</span></li>
+              <li class="pagination__item"><a class="pagination__link" href="#">10</a></li>
           </ul>
         </nav>
       </section>
 
-      <section class="newsletter">
-        <h2 class="newsletter__title">Подпишитесь на рассылку</h2>
-        <p class="newsletter__subtitle">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <section class="newsletter newsletter__catalog-bg">
+        <h2 class="newsletter__title newsletter__catalog">Подпишитесь на рассылку</h2>
+        <p class="newsletter__subtitle newsletter__catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter__form" action="https://echo.htmlacademy.ru/">
           <input name="email" type="email" placeholder="Ваш e-mail">
-          <button class="newsletter__button" type="submit">Подписаться</button>
+          <button class="btn newsletter__button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>

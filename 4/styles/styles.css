@@ -41,17 +41,14 @@ body {
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
-  text-transform: uppercase;
 }
 
-.header__action_bg {
+.btn {
   background-color: #756157;
-  border-radius: 4px;
-}
-
-.link_header {
   text-decoration: none;
   color: #FFF;
+  border-radius: 4px;
+  text-transform: uppercase;
 }
 
 .hero {
@@ -74,22 +71,24 @@ body {
   color: #333;
 }
 
-.about__feature:nth-child(1) {
+.about__feature_highlight {
   background-color: #82B3D3;
   color: #FFF;
 }
 
-.about__feature:nth-child(3) {
+.about__feature_transparent {
   background-color:rgba(131, 179, 211, 0.20);
 }
 
-.about__feature:nth-child(5) {
-  background-color: #82B3D3;
-  color: #FFF;
+.about__feature_bg {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.about_subtitle {
+  color: #333;
 }
 
 .about__features_title {
-  color: #000;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -98,7 +97,6 @@ body {
 }
 
 .about__features_subtitle {
-  color: #333;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -163,15 +161,10 @@ body {
 }
 
 .search__button {
-  border-radius: 4px;
-  background-color: #756157;
-  color: #FFF;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 36px;
-  text-transform: uppercase;
-  text-decoration: none;
 }
 
 .newsletter {
@@ -197,6 +190,22 @@ body {
   line-height: 26px;
 }
 
+.newsletter__button {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  background-color: #82B3D3;
+}
+
+.newsletter__catalog-bg {
+  background-image: none;
+}
+
+.newsletter__catalog {
+  color:#000;
+}
+
 .footer__contacts_link {
   color: #000;
   font-size: 40px;
@@ -205,6 +214,18 @@ body {
   line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.footer__contacts_link:hover {
+  color: #756157;
+}
+
+.footer__contacts_link:focus {
+  color: #756157;
+}
+
+.footer__contacts_link:active {
+  color: rgba(117, 97, 87, 0.30);
 }
 
 .hotels {
@@ -238,6 +259,14 @@ body {
   line-height: 24px;
 }
 
+.filter__infrastructure label {
+  color: var(--basic-white, #FFF);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+}
+
 .filter__house_legend {
   color: #FFF;
   font-size: 20px;
@@ -246,10 +275,128 @@ body {
   line-height: 24px;
 }
 
+.filter__house label {
+  color: var(--basic-white, #FFF);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+}
+
 .filter__price_legend {
   color: #FFF;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
+}
+
+.catalog__title {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.filter__button_apply {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  border-radius: 4px;
+  background-color: #82B3D3;
+}
+
+.filter__button_reset {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  background-color: transparent;
+}
+
+.sort__select {
+  color: #333;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.catalog__hotel_name {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.catalog__hotel_price {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.details__button {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.favorites__button {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  background-color: #82B3D3;
+}
+
+.catalog__hotel_raiting {
+  color: #333;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background-color: #F2F2F2;
+}
+
+.btn__active {
+  background-color: #7DB54F;
+}
+
+.pagination__item {
+  background-color: #82B3D3;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.pagination__item-first {
+  background-color: #F2F2F2;
+}
+
+.pagination__link {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.pagination__link-first {
+  color: #000;
+}
+
+.pagination__points {
+  color: #000;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
 }
