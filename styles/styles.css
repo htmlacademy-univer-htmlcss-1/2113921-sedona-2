@@ -163,8 +163,9 @@ body {
 .about__feature_text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   padding: 103px 85px;
+  gap: 60px;
 }
 
 .about__feature_transparent {
