@@ -356,6 +356,8 @@ body {
 }
 
 .footer__contacts_link {
+  font-family: "PT Sans";
+  font-style: normal;
   color: #000;
   font-size: 40px;
   font-weight: 400;
