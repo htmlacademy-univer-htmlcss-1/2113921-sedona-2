@@ -27,7 +27,7 @@ body {
   font-style: normal;
   font-size: 16px;
   line-height: 24px;
-  background-color: #FFF;
+  background-color: #F2F2F2;
   color: #000;
 }
 
@@ -42,6 +42,7 @@ body {
 }
 
 .header {
+  background-color: #FFF;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -115,6 +116,7 @@ body {
 }
 
 .header__about {
+  background-color: #FFF;
   display: flex;
   width: 1200px;
   padding: 69px 0;
@@ -207,6 +209,7 @@ body {
 }
 
 .header__advantages {
+  background-color: #FFF;
   display: flex;
   width: 1200px;
   padding: 64px 0;
@@ -277,11 +280,16 @@ body {
   text-align: center;
 }
 
+.search {
+  background-color: #FFF;
+}
+
 .search__title {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .search__subtitle {
@@ -310,6 +318,7 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .newsletter__subtitle {
@@ -336,6 +345,7 @@ body {
 }
 
 .footer {
+  background-color: #FFF;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -477,6 +487,10 @@ body {
   line-height: 24px;
 }
 
+.catalog {
+  background-color: #FFF;
+}
+
 .catalog__header {
   display: flex;
   align-items: center;
@@ -591,6 +605,7 @@ body {
   gap: 8px;
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .pagination__item {
