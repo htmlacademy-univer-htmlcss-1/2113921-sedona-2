@@ -713,3 +713,7 @@ body {
   font-weight: 400;
   line-height: 26px;
 }
+
+.pagination__item--points {
+  background-color: #FFF;
+}
