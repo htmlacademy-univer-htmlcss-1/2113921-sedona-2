@@ -447,6 +447,7 @@ body {
   gap: 10px;
   list-style: none;
   padding: 0;
+  margin: 8px 0 40px 0;
 }
 
 .breadcrumbs__link {
@@ -527,6 +528,9 @@ body {
 .catalog__header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+  margin: 0;
 }
 
 .sort {
@@ -537,6 +541,7 @@ body {
 .view {
   display: flex;
   align-items: center;
+  margin: 0 70px 0 0;
 }
 
 .view__list {
@@ -569,6 +574,7 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0 0 0 70px;
 }
 
 .filter__button_apply {
@@ -636,6 +642,12 @@ body {
   background-color: #7DB54F;
 }
 
+.pagination {
+  display: flex;
+  padding: 40px 70px 60px 70px;
+  background-color: #FFF;
+}
+
 .pagination__items {
   display: flex;
   gap: 8px;
@@ -645,6 +657,9 @@ body {
 }
 
 .pagination__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #82B3D3;
   font-size: 20px;
   font-weight: 700;
@@ -662,6 +677,12 @@ body {
 .pagination__link {
   text-decoration: none;
   color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
 }
 
 .pagination__link-first {
