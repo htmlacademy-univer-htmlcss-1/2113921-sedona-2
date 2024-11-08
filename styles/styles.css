@@ -547,13 +547,13 @@ body {
 
 .catalog {
   background-color: #FFF;
+  padding: 50px 70px 60px 70px;
 }
 
 .catalog__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 50px;
   margin: 0;
 }
 
@@ -570,7 +570,6 @@ body {
 .view {
   display: flex;
   align-items: center;
-  margin: 0 70px 0 0;
 }
 
 .view__list {
@@ -583,9 +582,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 0;
+  padding: 40px 0 40px 0;
   list-style: none;
-  margin: 40px 70px 40px 70px;
+  margin: 0;
 }
 
 .catalog__item {
@@ -604,7 +603,7 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0 0 0 70px;
+  margin: 0;
 }
 
 .filter__button_apply {
@@ -674,7 +673,7 @@ body {
 
 .pagination {
   display: flex;
-  padding: 40px 70px 60px 70px;
+  padding: 40px 0 60px 0;
   background-color: #FFF;
 }
 
