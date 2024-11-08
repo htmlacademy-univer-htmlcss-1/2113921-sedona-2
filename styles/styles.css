@@ -399,13 +399,13 @@ body {
 }
 
 .footer {
+  display: grid;
+  min-height: 50px;
   background-color: #FFF;
-  display: flex;
-  justify-content: space-between;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   margin: 0 auto;
   width: 1060px;
-  height: 50px;
   padding: 40px 70px 30px 70px;
 }
 
@@ -414,10 +414,10 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 142px;
   height: 40px;
   align-items: center;
   gap: 27px;
+  flex-wrap: wrap;
 }
 
 .footer__contacts_link {
@@ -441,6 +441,10 @@ body {
 
 .footer__contacts_link:active {
   color: rgba(117, 97, 87, 0.30);
+}
+
+.footer__logo_image {
+  justify-self: end;
 }
 
 .hotels {
