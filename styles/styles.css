@@ -449,7 +449,6 @@ body {
 .hotels {
   background-image: url(../images/catalog/catalog_background.jpg);
   width: 1060px;
-  height: 307px;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
