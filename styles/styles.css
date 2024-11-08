@@ -550,6 +550,11 @@ body {
   margin: 0;
 }
 
+.catalog__block {
+  display: flex;
+  gap: 70px;
+}
+
 .sort {
   display: flex;
   align-items: center;
@@ -564,6 +569,7 @@ body {
 .view__list {
   display: flex;
   list-style: none;
+  padding: 0;
 }
 
 .catalog__list {
