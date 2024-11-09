@@ -577,8 +577,8 @@ body {
 }
 
 .catalog__list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   gap: 20px;
   padding: 40px 0 40px 0;
   list-style: none;
@@ -600,7 +600,6 @@ body {
   border-radius: 4px;
   padding: 20px;
   box-sizing: border-box;
-  width: 340px;
 }
 
 .catalog__image {
