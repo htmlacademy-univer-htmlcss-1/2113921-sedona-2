@@ -353,8 +353,6 @@ body {
 .newsletter {
   background-image: url(../images/subscribe_background.jpg);
   background-repeat: no-repeat;
-  width: calc(1200px - 258px * 2);
-  height: calc(414px - 96px - 104px);
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   padding: 96px 258px 104px 258px;
@@ -587,12 +585,12 @@ body {
 
 .catalog__item {
   display: grid;
-  grid-template-rows: auto auto auto auto;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
   grid-template-areas:
     "image image"
     "hotel_name hotel_name"
-    "hotel_price hotel_price"
+    "hotel_info hotel_info"
     "buttons_card buttons_card"
     "stars rating";
   gap: 16px;
@@ -616,6 +614,20 @@ body {
   margin: 0;
 }
 
+.catalog__hotel_info {
+  grid-area: hotel_info;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.catalog__hotel_type {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  margin: 0;
+}
+
 .catalog__hotel_price {
   grid-area: hotel_price;
   font-size: 18px;
@@ -626,8 +638,9 @@ body {
 
 .buttons__card {
   grid-area: buttons_card;
-  display: flex;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
 .catalog__hotel_raiting {
