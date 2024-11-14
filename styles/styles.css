@@ -253,6 +253,23 @@ body {
   text-align: center;
 }
 
+.about__features_title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.30);
+  margin: 30px auto;
+}
+
+.about__features li:first-child .about__features_title::after {
+  background: rgba(255, 255, 255, 0.30);
+}
+
+.about__features li:last-child .about__features_title::after {
+  background: rgba(255, 255, 255, 0.30);
+}
+
 .about__features_subtitle {
   font-size: 18px;
   font-weight: 400;
