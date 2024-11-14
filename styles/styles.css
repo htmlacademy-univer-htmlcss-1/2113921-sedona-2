@@ -608,7 +608,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin: 0 0 0 70px;
+  margin: 56px 0 0 70px;
 }
 
 .filter__infrastructure_legend {
