@@ -955,7 +955,26 @@ body {
   height: 60px;
 }
 
+.pagination__item:hover {
+  background-color: #68A2CA;
+}
+
+.pagination__item:focus {
+  background-color: #68A2CA;
+}
+
+.pagination__item:active,
+.pagination__link:active {
+  color:rgba(255, 255, 255, 0.30);
+}
+
 .pagination__item-first {
+  background-color: #F2F2F2;
+}
+
+.pagination__item-first:hover,
+.pagination__item-first:focus,
+.pagination__item-first:active {
   background-color: #F2F2F2;
 }
 
@@ -973,6 +992,10 @@ body {
 }
 
 .pagination__link-first {
+  color: #000;
+}
+
+.pagination__link-first:active {
   color: #000;
 }
 
