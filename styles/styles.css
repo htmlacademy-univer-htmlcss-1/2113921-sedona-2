@@ -569,6 +569,12 @@ body {
   margin: 8px 0 40px 0;
 }
 
+.breadcrumbs__navigation img {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
 .breadcrumbs__link {
   color: #FFF;
   font-size: 16px;
