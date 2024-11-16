@@ -33,7 +33,7 @@
 
         <ol class="breadcrumbs__navigation">
           <li class="breadcrumbs__item"><a href="index.html"><img src="./images/icons/icon_home.svg" alt="Логотип дома" width="13" height="15"></a></li>
-          <li class="breadcrumbs__item"><img src="./images/icons/icon_arrow.svg" alt="Логотип стрелочка" width="6.39" height="9.9"></li>
+          <li class="breadcrumbs__item"><img src="./images/icons/icon_arrow.svg" alt="Логотип стрелочка" width="6" height="10"></li>
           <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Гостиницы</a></li>
         </ol>
 
@@ -54,11 +54,18 @@
           </fieldset>
 
           <fieldset class="filter__price">
-              <legend class="filter__price_legend">Стоимость, ₽:</legend>
-              <label for="min-price">От</label>
-              <input name="min-price" id="min-price" type="number" min="0" value="0">
-              <label for="max-price">До</label>
-              <input name="max-price" id="max-price" type="number" max="9000" value="9000">
+            <legend class="filter__price_legend">Стоимость, ₽:</legend>
+            <div class="filter__price_inputs">
+                <div class="price-input">
+                    <label for="min-price">От</label>
+                    <input class="input input-min" name="min-price" id="min-price" type="number" min="0" value="0">
+                </div>
+                <div class="price-input">
+                    <label for="max-price">До</label>
+                    <input class="input input-max" name="max-price" id="max-price" type="number" max="9000" value="9000">
+                </div>
+            </div>
+            <input class="price-slider" type="range" min="0" max="9000" step="100" value="0">
           </fieldset>
 
           <div class="filter__buttons">
@@ -117,10 +124,10 @@
               </div>
               <p class="catalog__hotel_raiting">Рейтинг: 8.5</p>
               <p class="catalog__hotel_stars">
-                <img src="./images/catalog/catalog_star.svg" alt="Звезда" width="18px" height="17px">
-                <img src="./images/catalog/catalog_star.svg" alt="Звезда" width="18px" height="17px">
-                <img src="./images/catalog/catalog_star.svg" alt="Звезда" width="18px" height="17px">
-                <img src="./images/catalog/catalog_star.svg" alt="Звезда" width="18px" height="17px">
+                <img src="./images/catalog/catalog_star.svg" alt="Звезда" width="18" height="17">
+                <img src="./images/catalog/catalog_star.svg" alt="Звезда" width="18" height="17">
+                <img src="./images/catalog/catalog_star.svg" alt="Звезда" width="18" height="17">
+                <img src="./images/catalog/catalog_star.svg" alt="Звезда" width="18" height="17">
               </p>
             </li>
 
@@ -137,10 +144,10 @@
               </div>
               <p class="catalog__hotel_raiting">Рейтинг: 9.2</p>
               <p class="catalog__hotel_stars">
-                <img src="./images/catalog/catalog_star.svg" alt="Звезда" width="18px" height="17px">
-                <img src="./images/catalog/catalog_star.svg" alt="Звезда" width="18px" height="17px">
-                <img src="./images/catalog/catalog_star.svg" alt="Звезда" width="18px" height="17px">
-                <img src="./images/catalog/catalog_star.svg" alt="Звезда" width="18px" height="17px">
+                <img src="./images/catalog/catalog_star.svg" alt="Звезда" width="18" height="17">
+                <img src="./images/catalog/catalog_star.svg" alt="Звезда" width="18" height="17">
+                <img src="./images/catalog/catalog_star.svg" alt="Звезда" width="18" height="17">
+                <img src="./images/catalog/catalog_star.svg" alt="Звезда" width="18" height="17">
               </p>
             </li>
 
@@ -157,9 +164,9 @@
               </div>
               <p class="catalog__hotel_raiting">Рейтинг: 6.9</p>
               <p class="catalog__hotel_stars">
-                <img src="./images/catalog/catalog_star.svg" alt="Звезда" width="18px" height="17px">
-                <img src="./images/catalog/catalog_star.svg" alt="Звезда" width="18px" height="17px">
-                <img src="./images/catalog/catalog_star.svg" alt="Звезда" width="18px" height="17px">
+                <img src="./images/catalog/catalog_star.svg" alt="Звезда" width="18" height="17">
+                <img src="./images/catalog/catalog_star.svg" alt="Звезда" width="18" height="17">
+                <img src="./images/catalog/catalog_star.svg" alt="Звезда" width="18" height="17">
               </p>
             </li>
 
@@ -176,8 +183,8 @@
               </div>
               <p class="catalog__hotel_raiting">Рейтинг: 5.0</p>
               <p class="catalog__hotel_stars">
-                <img src="./images/catalog/catalog_star.svg" alt="Звезда" width="18px" height="17px">
-                <img src="./images/catalog/catalog_star.svg" alt="Звезда" width="18px" height="17px">
+                <img src="./images/catalog/catalog_star.svg" alt="Звезда" width="18" height="17">
+                <img src="./images/catalog/catalog_star.svg" alt="Звезда" width="18" height="17">
               </p>
             </li>
 
