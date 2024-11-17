@@ -977,12 +977,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 140px;
-  height: 36px;
   color: #FFF;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
+  padding: 0;
 }
 
 .details__button:hover {
@@ -1003,7 +1002,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 140px;
   height: 36px;
   box-sizing: border-box;
   border: 1px solid #82B3D3;
@@ -1013,6 +1011,7 @@ body {
   font-weight: 700;
   line-height: 20px;
   background-color: #82B3D3;
+  padding: 0;
 }
 
 .favorites__button:hover {
