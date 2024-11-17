@@ -105,8 +105,6 @@ body {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
   width: 100%;
   height: 2px;
   background: #756257;
@@ -116,15 +114,23 @@ body {
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 20px;
+  gap: 10px;
   margin: 0;
   padding: 14px 0 14px 0;
 }
 
-.header__action {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
+.header__action:nth-child(1),
+.header__action:nth-child(2) {
+  width: 30px;
+  height: 36px;
+}
+
+.header__action a:not(.header__btn) {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn {
@@ -133,6 +139,10 @@ body {
   color: #FFF;
   border-radius: 4px;
   text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 0;
 }
 
 .header__btn {
@@ -140,11 +150,10 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 160px;
   box-sizing: border-box;
   white-space: nowrap;
   margin: 0 auto;
-  padding: 8px 50px;
+  padding: 8px 34px;
 }
 
 .header__btn:hover {
@@ -379,14 +388,12 @@ body {
 
 .search__button {
   font-size: 20px;
-  font-weight: 700;
   line-height: 36px;
   padding: 8px 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 375px;
   box-sizing: border-box;
   white-space: nowrap;
   margin: 0 auto;
@@ -456,11 +463,8 @@ body {
   padding: 8px 50px;
   justify-content: center;
   align-items: center;
-  width: 232px;
-  height: 52px;
   border: 1px solid #82B3D3;
   font-size: 20px;
-  font-weight: 700;
   line-height: 36px;
   background-color: #82B3D3;
   border-radius: 0 4px 4px 0;
@@ -509,8 +513,9 @@ body {
   padding: 0;
   margin: 0;
   align-items: center;
-  gap: 27px;
   flex-wrap: wrap;
+  width: 142px;
+  height: 40px;
 }
 
 .footer__socials_list a:hover img {
@@ -523,6 +528,20 @@ body {
 
 .footer__socials_list a:active img {
   opacity: 0.6;
+}
+
+.footer__social_item {
+  width: 47px;
+  height: 40px;
+  margin: 0;
+}
+
+.footer__social_item a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer__contacts_link {
@@ -783,8 +802,8 @@ body {
   grid-template-areas:
     "image image"
     "hotel_name hotel_name"
-    "hotel_info hotel_info"
-    "buttons_card buttons_card"
+    "hotel_type hotel_price"
+    "details_button favorites_button"
     "stars rating";
   gap: 16px;
   border: 1px solid #E6E6E6;
@@ -807,14 +826,8 @@ body {
   margin: 0;
 }
 
-.catalog__hotel_info {
-  grid-area: hotel_info;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .catalog__hotel_type {
+  grid-area: hotel_type;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
@@ -827,13 +840,7 @@ body {
   font-weight: 400;
   line-height: 21px;
   margin: 0;
-}
-
-.buttons__card {
-  grid-area: buttons_card;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  text-align: right;
 }
 
 .catalog__hotel_raiting {
@@ -862,8 +869,16 @@ body {
   margin: 0;
   align-self: center;
   justify-self: start;
-  gap: 6px;
   display: flex;
+}
+
+.star {
+  width: 18px;
+  height: 17px;
+  background-image: url('../images/catalog/catalog_star.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 6px;
 }
 
 .catalog__title {
@@ -879,15 +894,11 @@ body {
   padding: 8px 50px;
   justify-content: center;
   align-items: center;
-  height: 36px;
-  width: 191px;
   border: 1px solid #82B3D3;
   cursor: pointer;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  border-radius: 4px;
   background-color: #82B3D3;
+  box-sizing: border-box;
+  height: 36px;
 }
 
 .filter__button_apply:hover {
@@ -914,10 +925,9 @@ body {
   align-items: center;
   cursor: pointer;
   border: 3px solid transparent;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
   background-color: transparent;
+  box-sizing: border-box;
+  height: 36px;
 }
 
 .filter__button_reset:hover {
@@ -946,15 +956,11 @@ body {
 }
 
 .details__button {
+  grid-area: details_button;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 140px;
-  height: 36px;
   color: #FFF;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
 }
 
 .details__button:hover {
@@ -971,18 +977,15 @@ body {
 }
 
 .favorites__button {
+  grid-area: favorites_button;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 140px;
   height: 36px;
   box-sizing: border-box;
   border: 1px solid #82B3D3;
   cursor: pointer;
   color: #FFF;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
   background-color: #82B3D3;
 }
 
