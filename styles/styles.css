@@ -812,8 +812,8 @@ body {
   grid-template-areas:
     "image image"
     "hotel_name hotel_name"
-    "hotel_info hotel_info"
-    "buttons_card buttons_card"
+    "hotel_type hotel_price"
+    "details_button favorites_button"
     "stars rating";
   gap: 16px;
   border: 1px solid #E6E6E6;
@@ -836,14 +836,8 @@ body {
   margin: 0;
 }
 
-.catalog__hotel_info {
-  grid-area: hotel_info;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .catalog__hotel_type {
+  grid-area: hotel_type;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
@@ -856,13 +850,7 @@ body {
   font-weight: 400;
   line-height: 21px;
   margin: 0;
-}
-
-.buttons__card {
-  grid-area: buttons_card;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  text-align: right;
 }
 
 .catalog__hotel_raiting {
@@ -985,6 +973,7 @@ body {
 }
 
 .details__button {
+  grid-area: details_button;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1010,6 +999,7 @@ body {
 }
 
 .favorites__button {
+  grid-area: favorites_button;
   display: flex;
   justify-content: center;
   align-items: center;
