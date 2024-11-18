@@ -944,15 +944,17 @@ body {
 }
 
 .sort__select {
-  color: #333;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
-  display: flex;
-  width: 292px;
   padding: 14px 20px;
-  justify-content: space-between;
-  align-items: center;
+  width: 292px;
+  appearance: none;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  background-image: url("../images/icons/catalog__arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
 }
 
 .details__button {
