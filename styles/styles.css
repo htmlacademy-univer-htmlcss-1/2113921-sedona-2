@@ -1222,6 +1222,15 @@ body {
   display: flex;
 }
 
+.arrival__date,
+.departure__date,
+.adults__num,
+.children__num {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
 .modal__input {
   display: flex;
   width: 440px;
@@ -1231,6 +1240,10 @@ body {
   border-radius: 4px;
   font-size: 18px;
   font-weight: 700;
+  color: #000;
+}
+
+.modal__input::placeholder {
   color: #000;
 }
 
@@ -1304,4 +1317,5 @@ body {
   background-color: #83B3D3;
   border: none;
   cursor: pointer;
+  font-size: 20px;
 }
