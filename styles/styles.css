@@ -1216,6 +1216,20 @@ body {
   cursor: pointer;
 }
 
+.button__close_modal:hover {
+  background-color: #E6E6E6;
+}
+
+.button__close_modal:focus {
+  background-color: #E6E6E6;
+  border: 2px solid #83B3D3;
+  box-sizing: border-box;
+}
+
+.button__close_modal:active {
+  background-color: #E6E6E6;
+}
+
 .arrival__container,
 .departure__container {
   margin: 0;
