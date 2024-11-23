@@ -1396,3 +1396,12 @@ body {
   cursor: pointer;
   font-size: 20px;
 }
+
+.modal__search_button:hover,
+.modal__search_button:focus {
+  background-color: #68A2CA;
+}
+
+.modal__search_button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
