@@ -724,6 +724,17 @@ body {
   width: 287px;
 }
 
+.slider__bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 4px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  left: 10px;
+  right: 71px;
+}
+
 .slider__toggle {
   position: absolute;
   width: 20px;
