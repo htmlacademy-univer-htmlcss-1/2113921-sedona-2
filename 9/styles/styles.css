@@ -1338,8 +1338,8 @@ body {
 
 .tooltip {
   position: absolute;
-  top: 367px;
-  left: 467px;
+  left: 461px;
+  top: 368px;
 }
 
 .tooltip__toggle {
@@ -1353,8 +1353,8 @@ body {
 
 .tooltip__text {
   position: absolute;
-  top: 100%;
-  left: 50%;
+  top: 140%;
+  left: 42%;
   transform: translateX(-50%);
   background-color: #333333;
   color: #ffffff;
@@ -1395,4 +1395,13 @@ body {
   border: none;
   cursor: pointer;
   font-size: 20px;
+}
+
+.modal__search_button:hover,
+.modal__search_button:focus {
+  background-color: #68A2CA;
+}
+
+.modal__search_button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
