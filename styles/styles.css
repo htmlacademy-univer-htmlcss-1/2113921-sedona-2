@@ -1265,6 +1265,9 @@ body {
   font-size: 20px;
   font-weight: 700;
   text-transform: capitalize;
+  max-width: 130px;
+  word-wrap: break-word;
+  white-space: normal;
 }
 
 .modal__input {
@@ -1353,6 +1356,8 @@ body {
   margin: 0;
   padding: 0;
   align-items: center;
+  flex: 1 1 300px;
+  flex-wrap: wrap;
 }
 
 .children__group {
