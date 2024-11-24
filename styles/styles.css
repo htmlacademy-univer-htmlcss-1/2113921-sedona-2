@@ -1285,36 +1285,42 @@ body {
 }
 
 .increment {
-  right: 20px;
-  background-image: url('../images/modal/plus.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.increment_position {
-  right: 20px;
+  right: 10px;
+  top: 1px;
 }
 
 .decrement {
-  left: 60px;
-  background-image: url('../images/modal/minus.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.decrement_position {
-  left: 60px;
+  left: 55px;
+  top: 15px;
 }
 
 .decrement,
 .increment {
-  width: 32px;
-  height: 32px;
   border: none;
-  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  background: none;
   cursor: pointer;
   position: absolute;
-  top: 20%;
+  color: #756157;
+  box-sizing: border-box;
+}
+
+.decrement:hover,
+.increment:hover {
+  color: #000;
+}
+
+.decrement:focus,
+.increment:focus {
+  color: #000;
+  border-radius: 4px;
+  outline: 3px solid #82B3D3;
+}
+
+.decrement:active,
+.increment:active {
+  color: #756157;
 }
 
 .modal__input::placeholder {
