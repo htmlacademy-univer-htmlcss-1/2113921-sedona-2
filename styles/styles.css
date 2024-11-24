@@ -1269,7 +1269,8 @@ body {
 
 .modal__input {
   display: flex;
-  width: 400px;
+  max-width: 400px;
+  flex: 1 1 auto;
   padding: 12px 20px;
   background-color: #F2F2F2;
   border: transparent;
