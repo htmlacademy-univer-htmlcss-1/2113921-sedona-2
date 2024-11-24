@@ -1292,18 +1292,18 @@ body {
 }
 
 .increment_position {
-  right: 50px;
+  right: 20px;
 }
 
 .decrement {
-  left: 90px;
+  left: 60px;
   background-image: url('../images/modal/minus.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .decrement_position {
-  left: 50px;
+  left: 60px;
 }
 
 .decrement,
@@ -1348,6 +1348,10 @@ body {
   align-items: center;
 }
 
+.children__group {
+  margin-left: 88px;
+}
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
@@ -1367,7 +1371,7 @@ input[type="number"] {
 }
 
 .children__input {
-  margin: 0 0 0 82px;
+  margin: 0 0 0 46px;
 }
 
 .tooltip {
