@@ -1279,19 +1279,43 @@ body {
   color: #000;
 }
 
-.modal__input[type="text"] {
-  background-image: url(../images/modal/modal_date.svg);
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.increment {
+  right: 20px;
+  background-image: url('../images/modal/plus.svg');
   background-repeat: no-repeat;
-  background-position: 400px;
+  background-position: center;
 }
 
-.modal__input[type="number"] {
-  background-image: url(../images/modal/minus.svg), url(../images/modal/plus.svg);
-  background-repeat: no-repeat, no-repeat;
-  background-position: 13px, 50px;
-  text-align: center;
+.increment_position {
+  right: 50px;
 }
 
+.decrement {
+  left: 90px;
+  background-image: url('../images/modal/minus.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.decrement_position {
+  left: 50px;
+}
+
+.decrement,
+.increment {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 20%;
+}
 
 .modal__input::placeholder {
   color: #000;
@@ -1339,6 +1363,7 @@ input[type="number"] {
   height: 48px;
   box-sizing: border-box;
   margin: 0 0 0 46px;
+  text-align: center;
 }
 
 .children__input {
@@ -1346,9 +1371,9 @@ input[type="number"] {
 }
 
 .tooltip {
-  position: absolute;
-  left: 461px;
-  top: 368px;
+  position: relative;
+  left: 10px;
+  top: 3px;
 }
 
 .tooltip__toggle {

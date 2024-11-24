@@ -33,7 +33,11 @@
         <div class="guest__container">
           <p class="adults__group">
             <label class="adults__num" for="adults-num">Взрослые:</label>
-            <input class="adults__input modal__input" id="adults-num" name="adults-num" type="number" placeholder="2">
+            <div class="input-container">
+              <input class="adults__input modal__input" id="adults-num" name="adults-num" type="number" value="2">
+              <button class="decrement decrement_position" type="button"></button>
+              <button class="increment increment_position" type="button"></button>
+            </div>
           </p>
           <p class="children__group">
             <label class="children__num" for="children-num">Дети:</label>
@@ -49,7 +53,11 @@
                 <span class="tooltip__arrow"></span>
               </span>
             </span>
-            <input class="children__input modal__input" id="children-num" name="children-num" type="number" placeholder="2">
+            <div class="input-container">
+              <input class="children__input modal__input" id="children-num" name="children-num" type="number" value="2">
+              <button class="decrement" type="button"></button>
+              <button class="increment" type="button"></button>
+            </div>
           </p>
         </div>
       </form>
